@@ -14,6 +14,16 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Accordion</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="generate-colors" className='p-2' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Generate Colors</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="rating-stars" className='p-2' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Rating Stars</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
