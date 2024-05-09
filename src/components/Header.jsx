@@ -29,7 +29,11 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Images Slider</NavLink>
                     </li>
-
+                    <li>
+                        <NavLink to="load-more-products" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Load More Products</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
