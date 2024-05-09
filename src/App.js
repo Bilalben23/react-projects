@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import Accordion from './pages/Accordion'
 import GenerateColors from './pages/GenerateColors'
 import RatingStars from './pages/RatingStars'
+import ImageSlider from './pages/ImageSlider'
 
 
 
@@ -19,7 +20,8 @@ export default function App() {
             <Route path='accordion' element={<Accordion />} />
             <Route path='Generate-colors' element={<GenerateColors />} />
             <Route path='rating-stars' element={<RatingStars numberOfStars={10} />} />
-            <Route />
+            <Route path='images-slider' element={<ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />} />
+  
           </Route>
         </Routes>
       </BrowserRouter>

@@ -10,4 +10,12 @@
     body {
         font-family: "Noto Serif", serif;
     }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    header nav::-webkit-scrollbar {
+        display: none;
+    }
 }
