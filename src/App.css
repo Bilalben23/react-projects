@@ -15,7 +15,7 @@
         display: none;
     }
 
-    header nav::-webkit-scrollbar {
+    header nav ul::-webkit-scrollbar {
         display: none;
     }
 }

@@ -7,6 +7,8 @@ import GenerateColors from './pages/GenerateColors'
 import RatingStars from './pages/RatingStars'
 import ImageSlider from './pages/ImageSlider'
 import LoadMoreProducts from './pages/LoadMoreProducts'
+import NestedMenu from './pages/NestedMenu'
+import { sideMenu } from './components/data'
 
 
 
@@ -23,6 +25,7 @@ export default function App() {
             <Route path='rating-stars' element={<RatingStars numberOfStars={10} />} />
             <Route path='images-slider' element={<ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />} />
             <Route path='load-more-products' element={<LoadMoreProducts />} />
+            <Route path='nested-menu' element={<NestedMenu menus={sideMenu} />} />
           </Route>
         </Routes>
       </BrowserRouter>
