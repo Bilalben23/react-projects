@@ -1,5 +1,3 @@
-import { Children } from "react"
-
 export const accordions = [
     {
         id: 1,
@@ -19,6 +17,7 @@ export const accordions = [
         answer: "Yes, you can create an accordion component with different frameworks or libraries such as React, Vue.js, Angular, or even plain HTML, CSS, and JavaScript."
     }
 ]
+
 
 
 export const sideMenu = [

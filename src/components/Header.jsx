@@ -67,6 +67,11 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Nested Menu</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="qr-code-generator" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >QR Code Generator</NavLink>
+                    </li>
                 </ul>
                 <BsChevronRight size={50} className='cursor-pointer p-1 select-none' onClick={handleScrollRight} />
             </nav>
