@@ -10,6 +10,7 @@ import LoadMoreProducts from './pages/LoadMoreProducts'
 import NestedMenu from './pages/NestedMenu'
 import { sideMenu } from './components/data'
 import QRCodeGenerator from './pages/QRCodeGenerator'
+import LightDarkMode from './pages/LightDarkMode'
 
 
 
@@ -28,6 +29,7 @@ export default function App() {
             <Route path='load-more-products' element={<LoadMoreProducts />} />
             <Route path='nested-menu' element={<NestedMenu menus={sideMenu} />} />
             <Route path='qr-code-generator' element={<QRCodeGenerator />} />
+            <Route path='light-dark-mode' element={<LightDarkMode />} />
           </Route>
         </Routes>
       </BrowserRouter>
