@@ -77,6 +77,11 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Light Dark Mode</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="custom-scroll-indicator" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Custom Scroll Indicator</NavLink>
+                    </li>
                 </ul>
                 <BsChevronRight size={50} className='cursor-pointer p-1 select-none' onClick={handleScrollRight} />
             </nav>

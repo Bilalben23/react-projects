@@ -11,6 +11,7 @@ import NestedMenu from './pages/NestedMenu'
 import { sideMenu } from './components/data'
 import QRCodeGenerator from './pages/QRCodeGenerator'
 import LightDarkMode from './pages/LightDarkMode'
+import CustomScrollIndicator from './pages/CustomScrollIndicator'
 
 
 
@@ -30,6 +31,7 @@ export default function App() {
             <Route path='nested-menu' element={<NestedMenu menus={sideMenu} />} />
             <Route path='qr-code-generator' element={<QRCodeGenerator />} />
             <Route path='light-dark-mode' element={<LightDarkMode />} />
+            <Route path='custom-scroll-indicator' element={<CustomScrollIndicator />} />
           </Route>
         </Routes>
       </BrowserRouter>
