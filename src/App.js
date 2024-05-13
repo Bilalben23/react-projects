@@ -31,7 +31,7 @@ export default function App() {
             <Route path='nested-menu' element={<NestedMenu menus={sideMenu} />} />
             <Route path='qr-code-generator' element={<QRCodeGenerator />} />
             <Route path='light-dark-mode' element={<LightDarkMode />} />
-            <Route path='custom-scroll-indicator' element={<CustomScrollIndicator />} />
+            <Route path='custom-scroll-indicator' element={<CustomScrollIndicator url="https://dummyjson.com/products?limit=100" />} />
           </Route>
         </Routes>
       </BrowserRouter>
