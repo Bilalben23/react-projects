@@ -13,6 +13,8 @@ import QRCodeGenerator from './pages/QRCodeGenerator'
 import LightDarkMode from './pages/LightDarkMode'
 import CustomScrollIndicator from './pages/CustomScrollIndicator'
 import Tabs from './pages/Tabs'
+import Modal from './pages/Modal'
+import GithubProfileFinder from './pages/GithubProfileFinder'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -35,6 +37,8 @@ export default function App() {
             <Route path='light-dark-mode' element={<LightDarkMode />} />
             <Route path='custom-scroll-indicator' element={<CustomScrollIndicator url="https://dummyjson.com/products?limit=100" />} />
             <Route path='tabs' element={<Tabs tabs={tabs} />} />
+            <Route path='modal' element={<Modal />} />
+            <Route path='github-profile-finder' element={<GithubProfileFinder />} />
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>

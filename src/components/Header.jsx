@@ -87,6 +87,16 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Tabs</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="modal" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Modal</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="github-profile-finder" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Github Profile Finder</NavLink>
+                    </li>
                     {/* <li>
                         <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {
                             return { color: isActive ? "#FF407D" : "#fff" }
