@@ -8,10 +8,12 @@ import RatingStars from './pages/RatingStars'
 import ImageSlider from './pages/ImageSlider'
 import LoadMoreProducts from './pages/LoadMoreProducts'
 import NestedMenu from './pages/NestedMenu'
-import { sideMenu } from './components/data'
+import { sideMenu, tabs } from './components/data'
 import QRCodeGenerator from './pages/QRCodeGenerator'
 import LightDarkMode from './pages/LightDarkMode'
 import CustomScrollIndicator from './pages/CustomScrollIndicator'
+import Tabs from './pages/Tabs'
+// import Tailwind from './pages/Tailwind'
 
 
 
@@ -32,6 +34,8 @@ export default function App() {
             <Route path='qr-code-generator' element={<QRCodeGenerator />} />
             <Route path='light-dark-mode' element={<LightDarkMode />} />
             <Route path='custom-scroll-indicator' element={<CustomScrollIndicator url="https://dummyjson.com/products?limit=100" />} />
+            <Route path='tabs' element={<Tabs tabs={tabs} />} />
+            {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

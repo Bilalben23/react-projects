@@ -30,13 +30,13 @@ export default function Header() {
     }
 
     return (
-        <header className='bg-blue-900 text-white shadow-lg flex justify-between items-center px-4 py-2 fixed top-0 w-full z-50'>
+        <header className='fixed top-0 z-50 flex items-center justify-between w-full px-4 py-2 text-white bg-blue-900 shadow-lg'>
             <NavLink to="/" className='w-[55px] cursor-pointer rounded-full shadow-lg'>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ErDiTzx-ghinRk8bkuk2tklQdH2c7ueDANmSAYvobQ&s" alt="projects-logo" className='rounded-full w-full h-full' />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ErDiTzx-ghinRk8bkuk2tklQdH2c7ueDANmSAYvobQ&s" alt="projects-logo" className='w-full h-full rounded-full' />
             </NavLink>
-            <nav className='w-2/3 flex items-center justify-center space-x-2'>
-                <BsChevronLeft size={50} className='cursor-pointer p-1 select-none' onClick={handleScrollLeft} />
-                <ul className='flex justify-evenly items-center overflow-x-auto text-nowrap' ref={navLinks} >
+            <nav className='flex items-center justify-center w-2/3 space-x-2'>
+                <BsChevronLeft size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollLeft} />
+                <ul className='flex items-center overflow-x-auto justify-evenly text-nowrap' ref={navLinks} >
                     <li>
                         <NavLink to="accordion" className='p-2 text-xs font-bold' style={({ isActive }) => {
                             return { color: isActive ? "#FF407D" : "#fff" }
@@ -82,8 +82,18 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Custom Scroll Indicator</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="tabs?tab=tab1" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Tabs</NavLink>
+                    </li>
+                    {/* <li>
+                        <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Tailwind</NavLink>
+                    </li> */}
                 </ul>
-                <BsChevronRight size={50} className='cursor-pointer p-1 select-none' onClick={handleScrollRight} />
+                <BsChevronRight size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollRight} />
             </nav>
         </header>
     )

@@ -76,3 +76,26 @@ export const sideMenu = [
         ]
     }
 ]
+
+
+export const tabs = [
+    {
+        id: 0,
+        to: 'tab1',
+        label: 'Tab1',
+        text: 'This is the tab 1'
+    },
+    {
+        id: 1,
+        to: 'tab2',
+        label: 'Tab2',
+        text: 'This is the tab 2'
+    },
+    {
+        id: 2,
+        to: 'tab3',
+        label: 'Tab3',
+        text: 'This is the tab 3'
+    },
+
+]
