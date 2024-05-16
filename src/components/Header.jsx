@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 
@@ -96,6 +96,11 @@ export default function Header() {
                         <NavLink to="github-profile-finder" className='p-2 text-xs font-bold' style={({ isActive }) => {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Github Profile Finder</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="search-suggestions?username=?" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Search Suggestions</NavLink>
                     </li>
                     {/* <li>
                         <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {

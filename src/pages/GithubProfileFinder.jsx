@@ -83,7 +83,6 @@ function UserCard({ userData }) {
             <p className='mb-1 font-semibold text-sm'>Public Repos: {userData.public_repos}</p>
             <p className='mb-1 font-semibold text-sm'>Followers: {userData.followers}</p>
             <p className='text-sm font-semibold'>Following: {userData.following}</p>
-
         </div>
     )
 }
