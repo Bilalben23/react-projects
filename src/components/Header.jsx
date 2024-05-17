@@ -102,11 +102,11 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Search Suggestions</NavLink>
                     </li>
-                    {/* <li>
-                        <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                    <li>
+                        <NavLink to="tic-tac-toe" className='p-2 text-xs font-bold' style={({ isActive }) => {
                             return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Tailwind</NavLink>
-                    </li> */}
+                        }} >Tic Tac Toe Game</NavLink>
+                    </li>
                 </ul>
                 <BsChevronRight size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollRight} />
             </nav>

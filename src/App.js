@@ -17,6 +17,8 @@ import Modal from './pages/Modal'
 import GithubProfileFinder from './pages/GithubProfileFinder'
 import SearchSuggestions from './pages/SearchSuggestions'
 // import Tailwind from './pages/Tailwind'
+import TicTacToe from './pages/TicTacToe'
+
 
 
 
@@ -41,6 +43,7 @@ export default function App() {
             <Route path='modal' element={<Modal />} />
             <Route path='github-profile-finder' element={<GithubProfileFinder />} />
             <Route path='search-suggestions' element={<SearchSuggestions />} />
+            <Route path='tic-tac-toe' element={<TicTacToe />} />
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>
