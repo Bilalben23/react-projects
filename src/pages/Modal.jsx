@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaTimes } from "react-icons/fa"
-
+import useOutsideClick from '../utils/useOutsideClick'
 
 export default function Modal() {
     const [isOpen, setIsOpen] = useState(false)
     const [popupAccepted, setPopupAccepted] = useState(false)
-
+    const modelBox = useRef()
+    useOutsideClick(modelBox, () => setIsOpen(false))
 
     return (
         <div>
@@ -16,7 +17,7 @@ export default function Modal() {
             <div className='absolute inset-0 flex items-center justify-center bg-slate-100/50 backdrop-blur-sm z-[100] scale-0 transition-transform' style={{
                 transform: isOpen ? 'scale(1)' : 'scale(0)',
             }} >
-                <div className='relative p-5 border-2 border-red-500 bg-slate-50'>
+                <div ref={modelBox} className='relative p-5 border-2 border-red-500 bg-slate-50'>
                     <FaTimes
                         size={30}
                         className='absolute transition border-2 border-black cursor-pointer right-1 top-1 hover:opacity-85'

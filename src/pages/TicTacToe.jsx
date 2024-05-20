@@ -115,7 +115,6 @@ export default function TicTacToe() {
             </div>
             <div className='w-fit mx-auto mt-2 text-center'>
                 <p className='font-bold'>{status}</p>
-
                 <button type='button' onClick={handleRestart} className='px-3 mt-2 text-white cursor-pointer py-1 bg-red-500 rounded shadow transition hover:opacity-90 hover:shadow-none'>Restart</button>
             </div>
         </div>

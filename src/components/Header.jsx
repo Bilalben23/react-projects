@@ -107,6 +107,17 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Tic Tac Toe Game</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="test-fetch-custom-hook" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Test Fetch Custom Hook</NavLink>
+                    </li>
+
+                    {/* <li>
+                        <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Tailwind</NavLink>
+                    </li> */}
                 </ul>
                 <BsChevronRight size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollRight} />
             </nav>
