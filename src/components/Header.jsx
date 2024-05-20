@@ -112,6 +112,11 @@ export default function Header() {
                             return { color: isActive ? "#FF407D" : "#fff" }
                         }} >Test Custom Hooks</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="scroll-to-section" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                            return { color: isActive ? "#FF407D" : "#fff" }
+                        }} >Scroll To Section</NavLink>
+                    </li>
 
                     {/* <li>
                         <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {

@@ -12,9 +12,9 @@
         + Global styles or resets can go here. 
     */
 
-    h1 {
+    /* h1 {
         @apply text-blue-500 my-2
-    }
+    } */
 
     * {
         scroll-behavior: smooth;

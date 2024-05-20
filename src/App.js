@@ -18,6 +18,7 @@ import GithubProfileFinder from './pages/GithubProfileFinder'
 import SearchSuggestions from './pages/SearchSuggestions'
 import TicTacToe from './pages/TicTacToe'
 import TestCustomHooks from './pages/TestCustomHooks'
+import ScrollToSection from './pages/ScrollToSection'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -45,6 +46,7 @@ export default function App() {
             <Route path='search-suggestions' element={<SearchSuggestions />} />
             <Route path='tic-tac-toe' element={<TicTacToe />} />
             <Route path='test-custom-hooks' element={<TestCustomHooks />} />
+            <Route path='scroll-to-section' element={<ScrollToSection />} />
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>
