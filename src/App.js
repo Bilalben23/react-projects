@@ -17,7 +17,7 @@ import Modal from './pages/Modal'
 import GithubProfileFinder from './pages/GithubProfileFinder'
 import SearchSuggestions from './pages/SearchSuggestions'
 import TicTacToe from './pages/TicTacToe'
-import TestFetchCustomHook from './pages/TestFetchCustomHook'
+import TestCustomHooks from './pages/TestCustomHooks'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -44,7 +44,7 @@ export default function App() {
             <Route path='github-profile-finder' element={<GithubProfileFinder />} />
             <Route path='search-suggestions' element={<SearchSuggestions />} />
             <Route path='tic-tac-toe' element={<TicTacToe />} />
-            <Route path='test-fetch-custom-hook' element={<TestFetchCustomHook />} />
+            <Route path='test-custom-hooks' element={<TestCustomHooks />} />
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>

@@ -108,9 +108,9 @@ export default function Header() {
                         }} >Tic Tac Toe Game</NavLink>
                     </li>
                     <li>
-                        <NavLink to="test-fetch-custom-hook" className='p-2 text-xs font-bold' style={({ isActive }) => {
+                        <NavLink to="test-custom-hooks" className='p-2 text-xs font-bold' style={({ isActive }) => {
                             return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Test Fetch Custom Hook</NavLink>
+                        }} >Test Custom Hooks</NavLink>
                     </li>
 
                     {/* <li>

@@ -1,9 +1,11 @@
 import React from 'react'
 import useFetch from '../utils/useFetch'
 import useWindowResize from '../utils/useWindowResize'
+import ScrollToTop from '../components/ScrollToTop'
+import ScrollToBottom from '../components/ScrollToBottom'
 
-export default function TestFetchCustomHook() {
-    const { data: { products }, isLoading, error } = useFetch("https://dummyjson.com/products?limit=50", {})
+export default function TestCustomHooks() {
+    const { data: { products }, isLoading, error } = useFetch("https://dummyjson.com/products?limit=100", {})
     const { width, height } = useWindowResize()
 
     console.log(width, height);
@@ -23,7 +25,7 @@ export default function TestFetchCustomHook() {
                 {
                     isLoading && <ul className='w-3/4 mx-auto space-y-2'>
                         {
-                            [...Array(50)].map((_, index) => {
+                            [...Array(100)].map((_, index) => {
                                 return <li key={index} className='w-full h-[25px] rounded shadow bg-slate-200 animate-pulse'></li>
                             })
                         }
@@ -42,10 +44,12 @@ export default function TestFetchCustomHook() {
                 }
 
             </div>
-            <div className='w-fit mx-auto mt-4'>
+            <div className='w-fit mx-auto my-4 border-2 p-4'>
                 <p>width: {width}</p>
                 <p>height: {height}</p>
             </div>
+            <ScrollToBottom />
+            <ScrollToTop />
         </div>
     )
 }
