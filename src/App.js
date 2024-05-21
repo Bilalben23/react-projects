@@ -19,6 +19,7 @@ import SearchSuggestions from './pages/SearchSuggestions'
 import TicTacToe from './pages/TicTacToe'
 import TestCustomHooks from './pages/TestCustomHooks'
 import ScrollToSection from './pages/ScrollToSection'
+import Weather from './pages/Weather'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -47,6 +48,7 @@ export default function App() {
             <Route path='tic-tac-toe' element={<TicTacToe />} />
             <Route path='test-custom-hooks' element={<TestCustomHooks />} />
             <Route path='scroll-to-section' element={<ScrollToSection />} />
+            <Route path='weather' element={<Weather />} />
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>

@@ -3,6 +3,85 @@ import { NavLink } from 'react-router-dom'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 
 
+const navItems = [
+    {
+        id: 1,
+        to: 'accordion',
+        label: "Accordion"
+    }, {
+        id: 2,
+        to: 'generate-colors',
+        label: "Generate Colors"
+    }, {
+        id: 3,
+        to: 'rating-stars',
+        label: "Rating Stars"
+    }, {
+        id: 4,
+        to: 'images-slider',
+        label: "Images Slider"
+    }, {
+        id: 5,
+        to: 'load-more-products',
+        label: "Load More Products"
+    }, {
+        id: 6,
+        to: 'qr-code-generator',
+        label: "QR Code Generator"
+    }, {
+        id: 7,
+        to: 'nested-menu',
+        label: "Nested Menu"
+    }, {
+        id: 8,
+        to: 'light-dark-mode',
+        label: "Light Dark Mode"
+    }, {
+        id: 9,
+        to: 'custom-scroll-indicator',
+        label: "Custom Scroll Indicator"
+    }, {
+        id: 10,
+        to: 'tabs?tab=tab1',
+        label: "Tabs"
+    }, {
+        id: 11,
+        to: 'modal',
+        label: "Modal"
+    }, {
+        id: 12,
+        to: 'github-profile-finder',
+        label: "Github Profile Finder"
+    }, {
+        id: 13,
+        to: 'search-suggestions?username=?',
+        label: "Search Suggestions"
+    }, {
+        id: 14,
+        to: 'tic-tac-toe',
+        label: "Tic Tac Toe Game"
+    }, {
+        id: 15,
+        to: 'test-custom-hooks',
+        label: "Test Custom Hooks"
+    }, {
+        id: 16,
+        to: 'scroll-to-section',
+        label: "Scroll To Section"
+    }, {
+        id: 17,
+        to: 'weather',
+        label: "Weather"
+    },
+    // {
+    //     to: "tailwind",
+    //     label: 'Tailwind'
+    // }
+];
+
+
+
+
 export default function Header() {
     const navLinks = useRef()
 
@@ -37,92 +116,15 @@ export default function Header() {
             <nav className='flex items-center justify-center w-2/3 space-x-2'>
                 <BsChevronLeft size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollLeft} />
                 <ul className='flex items-center overflow-x-auto justify-evenly text-nowrap' ref={navLinks} >
-                    <li>
-                        <NavLink to="accordion" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Accordion</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="generate-colors" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Generate Colors</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="rating-stars" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Rating Stars</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="images-slider" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Images Slider</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="load-more-products" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Load More Products</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="nested-menu" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Nested Menu</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="qr-code-generator" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >QR Code Generator</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="light-dark-mode" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Light Dark Mode</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="custom-scroll-indicator" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Custom Scroll Indicator</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="tabs?tab=tab1" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Tabs</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="modal" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Modal</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="github-profile-finder" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Github Profile Finder</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="search-suggestions?username=?" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Search Suggestions</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="tic-tac-toe" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Tic Tac Toe Game</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="test-custom-hooks" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Test Custom Hooks</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="scroll-to-section" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Scroll To Section</NavLink>
-                    </li>
-
-                    {/* <li>
-                        <NavLink to="tailwind" className='p-2 text-xs font-bold' style={({ isActive }) => {
-                            return { color: isActive ? "#FF407D" : "#fff" }
-                        }} >Tailwind</NavLink>
-                    </li> */}
+                    {
+                        navItems.map(navItem => {
+                            return <li key={navItem.id}>
+                                <NavLink to={navItem.to} className='p-2 text-xs font-bold' style={({ isActive }) => {
+                                    return { color: isActive ? "#FF407D" : "#fff" }
+                                }} >{navItem.label}</NavLink>
+                            </li>
+                        })
+                    }
                 </ul>
                 <BsChevronRight size={50} className='p-1 cursor-pointer select-none' onClick={handleScrollRight} />
             </nav>
