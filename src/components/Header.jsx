@@ -73,6 +73,11 @@ const navItems = [
         to: 'weather',
         label: "Weather"
     },
+    {
+        id: 18,
+        to: 'food-recipe',
+        label: "Food Recipe"
+    },
     // {
     //     to: "tailwind",
     //     label: 'Tailwind'

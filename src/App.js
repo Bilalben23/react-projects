@@ -20,6 +20,10 @@ import TicTacToe from './pages/TicTacToe'
 import TestCustomHooks from './pages/TestCustomHooks'
 import ScrollToSection from './pages/ScrollToSection'
 import Weather from './pages/Weather'
+import FoodRecipeLayout from './pages/food-recipe/FoodRecipeLayout'
+import FoodRecipe from './pages/food-recipe/FoodRecipe'
+import FoodRecipeFavorites from './pages/food-recipe/FoodRecipeFavorites'
+import FoodRecipeDetails from './pages/food-recipe/FoodRecipeDetails'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -49,6 +53,13 @@ export default function App() {
             <Route path='test-custom-hooks' element={<TestCustomHooks />} />
             <Route path='scroll-to-section' element={<ScrollToSection />} />
             <Route path='weather' element={<Weather />} />
+            <Route path='food-recipe' element={<FoodRecipeLayout />} >
+              <Route index element={<FoodRecipe />} />
+              <Route path=':recipeId' element={<FoodRecipeDetails />} />
+              <Route path='favorites' element={<FoodRecipeFavorites />} />
+
+            </Route>
+
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
           </Route>
         </Routes>
