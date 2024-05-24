@@ -1,9 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 
-
-
-
 const favRecipeSlice = createSlice({
     name: "fav-recipes",
     initialState: [],

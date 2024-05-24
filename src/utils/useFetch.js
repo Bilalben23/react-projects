@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function useFetch(url, options = {}) {
     const [isLoading, setIsLoading] = useState(false);
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
     const [error, setError] = useState(null)
 
 
@@ -19,7 +19,7 @@ export default function useFetch(url, options = {}) {
                 setData(result)
 
             } catch (err) {
-                setError(err.message)
+                setError(err.message || err.name);
             } finally {
                 setIsLoading(false)
             }

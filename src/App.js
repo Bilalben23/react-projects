@@ -24,6 +24,9 @@ import FoodRecipeLayout from './pages/food-recipe/FoodRecipeLayout'
 import FoodRecipe from './pages/food-recipe/FoodRecipe'
 import FoodRecipeFavorites from './pages/food-recipe/FoodRecipeFavorites'
 import FoodRecipeDetails from './pages/food-recipe/FoodRecipeDetails'
+import ProductsLayouts from './pages/products/ProductsLayouts'
+import ProductsList from './pages/products/ProductsList'
+import ProductsShopCart from './pages/products/ProductsShopCart'
 // import Tailwind from './pages/Tailwind'
 
 
@@ -32,7 +35,7 @@ export default function App() {
 
   return (
     <StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename='/react-projects'>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
@@ -57,7 +60,10 @@ export default function App() {
               <Route index element={<FoodRecipe />} />
               <Route path=':recipeId' element={<FoodRecipeDetails />} />
               <Route path='favorites' element={<FoodRecipeFavorites />} />
-
+            </Route>
+            <Route path='products-list' element={<ProductsLayouts />} >
+              <Route index element={<ProductsList />} />
+              <Route path='shop-cart' element={<ProductsShopCart />} />
             </Route>
 
             {/* <Route path='tailwind' element={<Tailwind />} /> */}
@@ -67,3 +73,10 @@ export default function App() {
     </StrictMode>
   )
 }
+
+// React libraries:
+// + react-icons
+// react-loader-spinner
+
+// AOS: animation on scroll
+// React APEX charts
