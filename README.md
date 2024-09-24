@@ -1,4 +1,4 @@
-<img width="960" alt="Screenshot 2024-09-24 133742" src="https://github.com/user-attachments/assets/51d63867-fdc3-4b3d-ad44-cafcff2157f4">## 19 React Projects
+# 19 React Projects
 
 Throughout the process of building these 19 React projects, I gained valuable experience in several key areas of React development:
 
@@ -10,7 +10,7 @@ Throughout the process of building these 19 React projects, I gained valuable ex
 - **React Router**: Implemented [react-router-dom](https://reactrouter.com/) for efficient routing and navigation in single-page applications (SPA), ensuring a seamless user experience across different views.
 - **Global State Management**: Integrated complex state management solutions like [Redux](https://redux.js.org/) for projects that required more advanced global state management, optimizing scalability and performance.
 
-### Visit Our Site
+## Visit Our Site
 To explore more of these projects and experience them live, [visit our site](https://bilalben23.github.io/react-projects/generate-colors).
 ### Preview 
 <img width="960" alt="Screenshot 2024-09-24 133742" src="https://github.com/user-attachments/assets/bf343414-2023-4940-8e98-f4224b495046">
