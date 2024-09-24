@@ -13,6 +13,6 @@ Throughout the process of building these 19 React projects, I gained valuable ex
 ## Visit Our Site
 To explore more of these projects and experience them live, [visit our site](https://bilalben23.github.io/react-projects/generate-colors).
 ### Preview 
-<img width="960" alt="Screenshot 2024-09-24 133742" src="https://github.com/user-attachments/assets/bf343414-2023-4940-8e98-f4224b495046">
+<img width="960" alt="Screenshot 2024-09-24 133742" src="https://github.com/user-attachments/assets/ebcc672d-e5c0-4a33-82d3-0acc0f0a205c">
 
 
